@@ -1,0 +1,201 @@
+Location,TimeOfDay,Weather,MotionDetected,SensorIsTriggered
+Hallway,Night,Rainy,High,No
+Living Room,Afternoon,Sunny,Medium,No
+Hallway,Evening,Sunny,Low,No
+Living Room,Morning,Rainy,High,Yes
+Kitchen,Evening,Cloudy,Low,Yes
+Living Room,Morning,Cloudy,High,Yes
+Garden,Afternoon,Cloudy,Medium,No
+Garage,Afternoon,Cloudy,High,Yes
+Garage,Afternoon,Sunny,Low,Yes
+Living Room,Night,Cloudy,High,Yes
+Living Room,Morning,Cloudy,Low,Yes
+Living Room,Evening,Sunny,High,Yes
+Garden,Afternoon,Stormy,Low,Yes
+Kitchen,Afternoon,Sunny,Low,Yes
+Garage,Night,Stormy,High,No
+Living Room,Evening,Cloudy,Low,No
+Garden,Afternoon,Sunny,High,No
+Garage,Evening,Sunny,Low,No
+Living Room,Night,Cloudy,Low,Yes
+Garden,Evening,Rainy,Medium,No
+Kitchen,Evening,Rainy,Low,Yes
+Living Room,Afternoon,Sunny,Low,Yes
+Garden,Afternoon,Stormy,Low,Yes
+Kitchen,Evening,Stormy,Medium,Yes
+Hallway,Morning,Cloudy,Low,Yes
+Hallway,Afternoon,Sunny,Low,Yes
+Hallway,Afternoon,Rainy,Medium,Yes
+Kitchen,Evening,Rainy,Medium,No
+Garden,Night,Sunny,Medium,No
+Hallway,Evening,Cloudy,Low,No
+Living Room,Afternoon,Cloudy,Medium,Yes
+Hallway,Evening,Sunny,Low,Yes
+Living Room,Morning,Sunny,Medium,Yes
+Garden,Morning,Stormy,High,No
+Living Room,Night,Stormy,Medium,No
+Hallway,Morning,Cloudy,High,Yes
+Garage,Afternoon,Cloudy,Low,No
+Kitchen,Afternoon,Cloudy,Low,No
+Garage,Evening,Sunny,Medium,Yes
+Living Room,Night,Rainy,Low,Yes
+Kitchen,Evening,Sunny,Medium,Yes
+Hallway,Afternoon,Rainy,Low,No
+Garage,Night,Stormy,High,No
+Hallway,Evening,Sunny,High,No
+Garden,Morning,Rainy,Medium,Yes
+Garden,Evening,Rainy,High,No
+Living Room,Morning,Rainy,High,Yes
+Kitchen,Evening,Sunny,High,No
+Garden,Morning,Rainy,High,Yes
+Living Room,Night,Cloudy,High,Yes
+Living Room,Morning,Cloudy,Medium,Yes
+Garden,Evening,Stormy,Medium,No
+Hallway,Afternoon,Sunny,Medium,Yes
+Kitchen,Afternoon,Sunny,Low,No
+Living Room,Morning,Sunny,High,Yes
+Garden,Night,Cloudy,Low,Yes
+Kitchen,Afternoon,Sunny,High,Yes
+Garage,Evening,Rainy,Low,No
+Kitchen,Evening,Rainy,High,Yes
+Garden,Night,Cloudy,Low,Yes
+Hallway,Night,Rainy,Medium,Yes
+Kitchen,Evening,Stormy,Low,Yes
+Garden,Night,Stormy,High,No
+Garden,Afternoon,Stormy,Medium,Yes
+Living Room,Morning,Cloudy,Medium,No
+Garage,Evening,Rainy,Medium,No
+Living Room,Night,Rainy,Medium,Yes
+Kitchen,Afternoon,Sunny,Low,Yes
+Hallway,Afternoon,Cloudy,Medium,No
+Garage,Night,Cloudy,High,Yes
+Kitchen,Night,Cloudy,Low,Yes
+Kitchen,Afternoon,Cloudy,High,Yes
+Hallway,Afternoon,Sunny,Medium,No
+Living Room,Afternoon,Rainy,High,No
+Hallway,Evening,Cloudy,Medium,No
+Kitchen,Afternoon,Stormy,Medium,No
+Kitchen,Night,Stormy,Medium,Yes
+Living Room,Morning,Stormy,Medium,No
+Garden,Evening,Cloudy,High,Yes
+Kitchen,Night,Stormy,High,Yes
+Hallway,Evening,Cloudy,Low,Yes
+Garage,Afternoon,Stormy,High,Yes
+Hallway,Night,Cloudy,High,No
+Garage,Afternoon,Sunny,Medium,No
+Kitchen,Night,Cloudy,High,Yes
+Kitchen,Afternoon,Sunny,Medium,Yes
+Kitchen,Night,Cloudy,Low,Yes
+Garden,Morning,Cloudy,Medium,Yes
+Garden,Morning,Rainy,High,No
+Hallway,Night,Cloudy,Low,No
+Garden,Morning,Rainy,Medium,No
+Kitchen,Evening,Sunny,Low,No
+Kitchen,Morning,Rainy,Low,No
+Living Room,Morning,Rainy,Low,No
+Garage,Afternoon,Stormy,High,Yes
+Living Room,Night,Sunny,Low,No
+Hallway,Evening,Sunny,High,No
+Garage,Afternoon,Stormy,Low,No
+Hallway,Afternoon,Stormy,Low,No
+Garage,Evening,Rainy,Medium,No
+Hallway,Afternoon,Cloudy,Medium,No
+Kitchen,Night,Stormy,Medium,No
+Garage,Morning,Stormy,High,No
+Living Room,Evening,Stormy,Low,Yes
+Hallway,Morning,Cloudy,High,Yes
+Kitchen,Morning,Cloudy,Low,No
+Living Room,Night,Stormy,Low,No
+Garage,Night,Cloudy,High,No
+Kitchen,Afternoon,Rainy,Medium,No
+Garden,Night,Sunny,High,Yes
+Hallway,Night,Sunny,Low,Yes
+Garden,Morning,Rainy,Low,No
+Garden,Night,Cloudy,Medium,Yes
+Kitchen,Night,Sunny,Low,Yes
+Living Room,Night,Stormy,Low,No
+Garage,Morning,Sunny,High,No
+Garage,Afternoon,Stormy,Low,Yes
+Garage,Afternoon,Sunny,High,Yes
+Garage,Afternoon,Cloudy,Low,No
+Garden,Evening,Rainy,Medium,Yes
+Hallway,Morning,Rainy,Medium,Yes
+Garage,Morning,Rainy,Medium,Yes
+Garage,Night,Stormy,Medium,Yes
+Hallway,Morning,Cloudy,High,Yes
+Hallway,Night,Rainy,High,Yes
+Garage,Morning,Cloudy,Low,No
+Hallway,Night,Rainy,Low,Yes
+Kitchen,Night,Rainy,Medium,No
+Kitchen,Morning,Sunny,Low,No
+Kitchen,Evening,Cloudy,Low,No
+Living Room,Morning,Rainy,Medium,No
+Living Room,Afternoon,Sunny,High,Yes
+Living Room,Morning,Rainy,High,No
+Garden,Afternoon,Rainy,Medium,No
+Garden,Evening,Sunny,High,Yes
+Living Room,Morning,Rainy,Low,No
+Garage,Afternoon,Cloudy,Medium,No
+Garage,Night,Cloudy,Medium,No
+Living Room,Night,Sunny,Medium,Yes
+Garage,Evening,Rainy,High,Yes
+Garden,Afternoon,Cloudy,Medium,Yes
+Hallway,Afternoon,Stormy,Low,No
+Living Room,Afternoon,Stormy,Low,No
+Garden,Night,Sunny,Medium,No
+Garden,Afternoon,Stormy,High,No
+Garage,Morning,Stormy,High,No
+Living Room,Morning,Rainy,Medium,Yes
+Garage,Morning,Stormy,High,No
+Garage,Night,Cloudy,Medium,Yes
+Garden,Evening,Rainy,Medium,Yes
+Kitchen,Night,Cloudy,High,No
+Living Room,Night,Rainy,Medium,No
+Living Room,Afternoon,Rainy,High,No
+Garden,Morning,Stormy,High,No
+Hallway,Evening,Sunny,Low,No
+Kitchen,Night,Sunny,Medium,Yes
+Garden,Night,Cloudy,High,No
+Garage,Afternoon,Rainy,High,No
+Hallway,Afternoon,Sunny,Low,Yes
+Garage,Evening,Rainy,High,Yes
+Living Room,Night,Cloudy,High,No
+Living Room,Night,Stormy,High,No
+Kitchen,Night,Stormy,Medium,Yes
+Garage,Night,Rainy,High,No
+Garage,Night,Sunny,High,No
+Garden,Evening,Sunny,Low,No
+Garden,Afternoon,Rainy,High,Yes
+Living Room,Afternoon,Rainy,Medium,Yes
+Garden,Night,Rainy,Low,No
+Garden,Night,Stormy,Low,No
+Hallway,Evening,Rainy,High,No
+Garden,Afternoon,Sunny,Medium,Yes
+Garage,Morning,Sunny,Low,No
+Garden,Evening,Sunny,Medium,Yes
+Living Room,Morning,Stormy,Low,Yes
+Garden,Afternoon,Cloudy,High,No
+Garage,Morning,Stormy,Low,Yes
+Living Room,Evening,Sunny,Medium,Yes
+Garden,Morning,Rainy,Low,Yes
+Kitchen,Morning,Rainy,Low,No
+Living Room,Evening,Sunny,High,Yes
+Kitchen,Night,Cloudy,Low,No
+Kitchen,Night,Rainy,High,Yes
+Garage,Morning,Stormy,Medium,Yes
+Garden,Morning,Sunny,Low,Yes
+Garage,Afternoon,Cloudy,Medium,No
+Hallway,Evening,Cloudy,Low,Yes
+Kitchen,Afternoon,Sunny,Low,No
+Kitchen,Morning,Cloudy,Low,Yes
+Living Room,Night,Cloudy,Low,No
+Living Room,Afternoon,Stormy,High,No
+Living Room,Afternoon,Sunny,Medium,No
+Kitchen,Morning,Rainy,Medium,No
+Kitchen,Evening,Stormy,Low,No
+Kitchen,Night,Stormy,High,No
+Garden,Afternoon,Cloudy,High,Yes
+Garden,Evening,Rainy,Low,No
+Garage,Afternoon,Stormy,Medium,Yes
+Living Room,Morning,Sunny,High,No
+Living Room,Afternoon,Sunny,Low,Yes
