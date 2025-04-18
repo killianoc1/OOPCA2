@@ -22,7 +22,7 @@ public class fileProcessor
     // Constructor
     fileProcessor()
     {
-        this.fileName = "sensor_data.csv";
+        this.fileName = "sensorTriggered_data.csv";
     }
     
     // Getter and Setter for fileName
