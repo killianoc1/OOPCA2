@@ -1,6 +1,11 @@
-// SensorIsTriggered
+/*
+ * Author: Killian O Connell
+ * Date: 22/4/2025
+ * Programme Description: Control Class for programme
+ */
 
 import java.util.Map;
+import javax.swing.SwingUtilities;
 
 public class ControlCA2 
 {
@@ -24,5 +29,7 @@ public class ControlCA2
             }
             System.out.println();
         }
+
+        SwingUtilities.invokeLater(() -> new SensorPredictorGUI().setVisible(true));
     }
 }

@@ -1,7 +1,7 @@
 /*
 * Author: Killian O Connell
-* Date: 20/3/2025
-* Description: Reading and printing to a csv file with sensor_data
+* Date: 22/4/2025
+* Description: Printing out the contents of sensorTriggered_data in a frequency table
 */
 
 import java.io.File;
