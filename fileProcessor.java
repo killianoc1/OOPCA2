@@ -1,15 +1,13 @@
 /*
-* Author: Killian O Connell
-* Date: 22/4/2025
-* Description: Printing out the contents of sensorTriggered_data in a frequency table
-*/
-
+ * Author: Killian O Connell
+ * Date: 20/3/2025
+ * Description: Reading and printing to a csv file with sensor_data, including frequency table generation
+ */
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -27,42 +25,6 @@ public class fileProcessor
         this.fileName = "sensorTriggered_data.csv";
     }
     
-    // Getter and Setter for fileName
-    public String getFileName() {
-        return fileName;
-    }
-
-    public void setFileName(String fileName) {
-        this.fileName = fileName;
-    }
-
-    // Getter and Setter for fileExample
-    public File getFileExample() {
-        return fileExample;
-    }
-
-    public void setFileExample(File fileExample) {
-        this.fileExample = fileExample;
-    }
-
-    // Getter and Setter for myScanner
-    public Scanner getMyScanner() {
-        return myScanner;
-    }
-
-    public void setMyScanner(Scanner myScanner) {
-        this.myScanner = myScanner;
-    }
-
-    // Getter and Setter for pwInput
-    public PrintWriter getPwInput() {
-        return pwInput;
-    }
-
-    public void setPwInput(PrintWriter pwInput) {
-        this.pwInput = pwInput;
-    }
-
     // Method to open the file
     public void openFile() 
     {
@@ -74,7 +36,6 @@ public class fileProcessor
                 fileExample.createNewFile();
             }
         } 
-        
         catch (IOException e) 
         {
             System.out.println("Error opening file: " + e.getMessage());
@@ -86,33 +47,8 @@ public class fileProcessor
     {
         fileExample = new File(fileName);
     }
-
-    // Part 2: Read File
-    ArrayList<String> readFile()
-    {
-        ArrayList<String> values = new ArrayList<>();
-        
-        try
-        {
-            myScanner = new Scanner(fileExample); 
-
-            while (myScanner.hasNextLine())
-            {
-                values.add(myScanner.nextLine());
-            }
-            myScanner.close();
-        }
-        catch (FileNotFoundException e)
-        {
-            System.out.println("run time error " + e.getMessage());
-        }
-        finally
-        {
-            return values;
-        }
-    }
     
-    // Part 3: Get File Writer
+    // Get File Writer
     void getFileWriter()
     {
         try
@@ -131,12 +67,6 @@ public class fileProcessor
     {
         System.out.println(line);
         pwInput.println(line);    	
-    }
-
-    // Close Read File
-    void closeReadFile()
-    {
-        myScanner.close();
     }
 
     // Close Write File
@@ -180,7 +110,7 @@ public class fileProcessor
                     // If we haven't seen this feature combination before, make a new map for it
                     if (!frequencyTable.containsKey(featureKey))
                     {
-                        frequencyTable.put(featureKey, new HashMap<String, Integer>());
+                        frequencyTable.put(featureKey, new HashMap<>());
                     }
 
                     // Get the map for this feature combination
@@ -214,7 +144,7 @@ public class fileProcessor
         String result = "";
         
         // Print the header
-        result = result + "Features               Labels\n";
+        result = result + "         Features                 Labels\n";
         result = result + "F1      F2      F3      F4      Yes     No\n";
 
         // Print each row
