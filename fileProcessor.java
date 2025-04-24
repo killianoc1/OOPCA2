@@ -1,7 +1,7 @@
 /*
  * Author: Killian O Connell
  * Date: 20/3/2025
- * Description: Reading and printing to a csv file with sensor_data, including frequency table generation
+ * Description: Reading and printing to a csv file with sensorTriggered_data, including frequency table generation
  */
 import java.io.File;
 import java.io.FileNotFoundException;
