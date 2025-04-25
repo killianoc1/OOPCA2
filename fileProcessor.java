@@ -75,105 +75,124 @@ public class fileProcessor
         pwInput.close();
     }
 
-    // Method to generate frequency table using maps
+    // Method to generate frequency table
+    // Reads a file and counts how often each unique combo of four features leads to "Yes" or "No".
     Map<String, Map<String, Integer>> getFrequencyTable()
     {
+        // Initialize the outer HashMap to store feature combinations and their label counts
         Map<String, Map<String, Integer>> frequencyTable = new HashMap<>();
+        
         String[] headers = {"Location", "TimeOfDay", "Weather", "MotionDetected", "SensorIsTriggered"};
         
         try 
         {
+            // Initialize Scanner
             myScanner = new Scanner(fileExample);
             
-            // Skip the header line
+            // Skip the header line in the file if it exists
             if (myScanner.hasNextLine()) 
             {
                 myScanner.nextLine();
             }
 
-            // Read each line
             while (myScanner.hasNextLine()) 
             {
+                // Read the current line
                 String line = myScanner.nextLine();
+                // Split the line into values based on comma delimiter
                 String[] values = line.split(",");
 
-                // Check if the row has the right number of columns
+                // Verify the row has the correct number of columns
                 if (values.length == headers.length) 
                 {
-                    // Make a key from the first 4 columns
+                    // Create a feature key by concatenating first 4 columns with commas
                     String featureKey = values[0].trim() + "," + 
-                                       values[1].trim() + "," + 
-                                       values[2].trim() + "," + 
-                                       values[3].trim();
-                    String label = values[4].trim(); // Yes or No
+                                    values[1].trim() + "," + 
+                                    values[2].trim() + "," + 
+                                    values[3].trim();
+                    // Get the label (Yes/No) from the last column
+                    String label = values[4].trim();
 
-                    // If we haven't seen this feature combination before, make a new map for it
+                    // If this feature combination is new, create a new inner HashMap
                     if (!frequencyTable.containsKey(featureKey))
                     {
                         frequencyTable.put(featureKey, new HashMap<>());
                     }
 
-                    // Get the map for this feature combination
+                    // Get the inner Map containing label counts for this feature combination
                     Map<String, Integer> labelCounts = frequencyTable.get(featureKey);
                     
-                    // Add 1 to the count for this label
+                    // Increment the count for the current label
                     if (labelCounts.containsKey(label))
                     {
+                        // If label exists, increment its count
                         int currentCount = labelCounts.get(label);
                         labelCounts.put(label, currentCount + 1);
                     }
                     else
                     {
+                        // If label is new, initialize its count to 1
                         labelCounts.put(label, 1);
                     }
                 }
             }
+
+            // Close the Scanner
             myScanner.close();
         } 
         catch (FileNotFoundException e) 
         {
+            // Handle file not found exception and print error message
             System.out.println("run time error " + e.getMessage());
         }
 
+        // Return the completed frequency table
         return frequencyTable;
     }
 
-    // Method to format the frequency table as a string for presenting
+    // Method to format the frequency table as a string for display
     public String formatFrequencyTable(Map<String, Map<String, Integer>> table)
     {
+        // Initialize result string to store formatted output
         String result = "";
         
-        // Print the header
+        // Add header lines to the output
         result = result + "         Features                 Labels\n";
         result = result + "F1      F2      F3      F4      Yes     No\n";
 
-        // Print each row
+        // Iterate through each feature combination in the table
         for (String featureKey : table.keySet())
         {
+            // Split the feature key into individual features
             String[] features = featureKey.split(",");
+            
+            // Get the label counts for this feature combination
             Map<String, Integer> labelCounts = table.get(featureKey);
 
-            // Get the Yes and No counts
+            // Initialize counts for Yes and No labels
             int yesCount = 0;
             if (labelCounts.containsKey("Yes"))
             {
+                // Get Yes count if it exists
                 yesCount = labelCounts.get("Yes");
             }
             int noCount = 0;
             if (labelCounts.containsKey("No"))
             {
+                // Get No count if it exists
                 noCount = labelCounts.get("No");
             }
 
-            // Build the row with spaces for alignment
+            // Build formatted row with aligned columns
             result = result + features[0] + "      " + 
-                              features[1] + "      " + 
-                              features[2] + "      " + 
-                              features[3] + "      " + 
-                              yesCount + "      " + 
-                              noCount + "\n";
+                            features[1] + "      " + 
+                            features[2] + "      " + 
+                            features[3] + "      " + 
+                            yesCount + "      " + 
+                            noCount + "\n";
         }
 
+        // Return the complete formatted string
         return result;
     }
 }
