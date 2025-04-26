@@ -91,3 +91,5 @@ Feature Expansion: Allow users to add new feature categories (e.g., more weather
 I would also try complete the level 4 of this project which was to make my application able to calculate the accuracy of the predictor. This would have involved training my predictor on 150 rows of the data – and testing my data on 50 rows
 
 
+Link to my demo video:
+https://youtu.be/gdt476GR4y8
